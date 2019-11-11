@@ -7,8 +7,9 @@ class PostsController < ApplicationController
   def edit
   end
 
-  def update
-    if @post.update(post_params)
+  def update # method does not pass tests, submitted for AAQ purposes
+    if @post.valid?
+      @post.update(post_params)
       redirect_to post_path(@post)
     else
       render :edit
