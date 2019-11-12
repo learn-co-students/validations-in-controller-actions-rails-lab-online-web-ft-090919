@@ -20,10 +20,10 @@ Make sure you run `rake db:seed` so you have some data to work with (defined in 
 
 This is a barebones app with two models, `Author` and `Post`. Right now, you can...
 
-- [View an author](http://localhost:3000/authors/1)
-- [View a post](http://localhost:3000/posts/1)
-- [Create an author](http://localhost:3000/authors/new)
-- [Edit a post](http://localhost:3000/posts/1/edit)
+- [View an author](http://localhost:3000/authors/1)<!-- @IGNORE PREVIOUS: link -->
+- [View a post](http://localhost:3000/posts/1)<!-- @IGNORE PREVIOUS: link -->
+- [Create an author](http://localhost:3000/authors/new)<!-- @IGNORE PREVIOUS: link -->
+- [Edit a post](http://localhost:3000/posts/1/edit)<!-- @IGNORE PREVIOUS: link -->
 
 To complete this lab, you will need to:
 
