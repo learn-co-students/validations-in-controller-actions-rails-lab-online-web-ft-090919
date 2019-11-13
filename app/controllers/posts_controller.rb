@@ -7,11 +7,26 @@ class PostsController < ApplicationController
   def edit
   end
 
+  # def new
+  # end
+  #
+  # def create
+  #   @post = post.new(post_params)
+  #   if @post.save
+  #     redirect_to post_path(@post)
+  #   else
+  #     render :new
+  #   end
+  # end
+
   def update
-    @post.update(post_params)
+    if @post.update(post_params)
 
     redirect_to post_path(@post)
+  else
+    render :edit
   end
+end
 
   private
 
