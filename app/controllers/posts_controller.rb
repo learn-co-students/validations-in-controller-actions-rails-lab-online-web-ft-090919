@@ -8,9 +8,11 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
-
-    redirect_to post_path(@post)
+    if @post.update(post_params) #this is syaing was anything in the post_params were updated?
+      redirect_to post_path(@post) # this is saying if so send them to there updated post 
+    else
+      render :edit #if not show them the edit form again
+    end 
   end
 
   private
